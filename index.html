@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מילים, אקורדים ותווים לשירים">
+    <title>מילים, אקורדים ותווים לשירים</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            color: #333;
+        }
+        header {
+            background: #4a4a4a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 4px solid #77aaff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .search input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f7f7f7;
+            color: #333;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            position: relative;
+            cursor: pointer;
+        }
+        th[aria-sort="ascending"]::after {
+            content: "▲";
+            position: absolute;
+            right: 10px;
+        }
+        th[aria-sort="descending"]::after {
+            content: "▼";
+            position: absolute;
+            right: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+        }
+        @media (max-width: 1200px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+        @media (max-width: 992px) {
+            .container {
+                width: 95%;
+            }
+            .search input {
+                padding: 10px;
+                font-size: 14px;
+            }
+            th, td {
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 768px) {
+            .search input {
+                padding: 8px;
+                font-size: 13px;
+            }
+            th, td {
+                font-size: 13px;
+            }
+            header h1 {
+                font-size: 1.6em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            th, td {
+                white-space: nowrap;
+            }
+        }
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 1.4em;
+            }
+            .search input {
+                padding: 6px;
+                font-size: 12px;
+            }
+            th, td {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>מילים, אקורדים ותווים לשירים</h1>
+        </div>
+    </header>
+    <div class="container main">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="חיפוש לפי שם שיר או פרטים נוספים">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th aria-sort="none" aria-label="שם שיר">שם שיר</th>
+                    <th aria-sort="none" aria-label="מילים לשיר">מילים לשיר</th>
+                    <th aria-sort="none" aria-label="אקורדים">אקורדים</th>
+                    <th aria-sort="none" aria-label="קאפו בסריג">קאפו בסריג (גרסא קלה)</th>
+                    <th aria-sort="none" aria-label="תווים">תווים</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example rows -->
+               
+
+			  <tr>
+                    <td>מודה אני | עומר אדם<br><small>מילים: אבי אוחיון | לחן: אסף צרויה</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=10755&wrkid=38071" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%A2%D7%95%D7%9E%D7%A8-%D7%90%D7%93%D7%9D/%D7%9E%D7%95%D7%93%D7%94-%D7%90%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%95%D7%9E%D7%A8_%D7%90%D7%93%D7%9D/%D7%9E%D7%95%D7%93%D7%94_%D7%90%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגנו</a>
+                    </td>
+                    <td>קאפו בסריג 4</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				<tr>
+                <td>יחפים | יסמין מועלם<br><small><br>מילים ולחן: יסמין מועלם </small></td>
+               <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=22199&wrkid=52529">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%99%D7%A1%D7%9E%D7%99%D7%9F-%D7%9E%D7%95%D7%A2%D7%9C%D7%9D/%D7%99%D7%97%D7%A4%D7%99%D7%9D">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%99%D7%A1%D7%9E%D7%99%D7%9F_%D7%9E%D7%95%D7%A2%D7%9C%D7%9D/%D7%99%D7%97%D7%A4%D7%99%D7%9D">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>היא לא יודעת מה עובר עליי | שלמה ארצי<br><br><small>מילים ולחן: שלמה ארצי</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=975&wrkid=1061">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A9%D7%9C%D7%9E%D7%94-%D7%90%D7%A8%D7%A6%D7%99/%D7%94%D7%99%D7%90-%D7%9C%D7%90-%D7%99%D7%95%D7%93%D7%A2%D7%AA-%D7%9E%D7%94-%D7%A2%D7%95%D7%91%D7%A8-%D7%A2%D7%9C%D7%99%D7%99">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%A8%D7%A6%D7%99/%D7%94%D7%99%D7%90_%D7%9C%D7%90_%D7%99%D7%95%D7%93%D7%A2%D7%AA_%D7%9E%D7%94_%D7%A2%D7%95%D7%91%D7%A8_%D7%A2%D7%9C%D7%99">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>תוכו רצוף אהבה | ישי ריבו<br><small><br>מילים ולחן: ישי ריבו</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=14733&wrkid=33820">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%99%D7%A9%D7%99-%D7%A8%D7%99%D7%91%D7%95/%D7%AA%D7%95%D7%9B%D7%95-%D7%A8%D7%A6%D7%95%D7%A3-%D7%90%D7%94%D7%91%D7%94">נגינה</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 2
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>עם ישראל חי | אייל גולן<br><small><br>מילים ולחן: אבי אוחיון ואופיר כהן<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=92&wrkid=59179">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%90%D7%99%D7%99%D7%9C-%D7%92%D7%95%D7%9C%D7%9F/%D7%A2%D7%9D-%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%97%D7%99-1">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%90%D7%99%D7%99%D7%9C_%D7%92%D7%95%D7%9C%D7%9F/%D7%A2%D7%9D_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%97%D7%99">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 5
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>מי שמאמין לא מפחד | אייל גולן<br><small><br>מילים: יוסי גיספן | לחן: עדי לאון</small></td>
+               <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=92&wrkid=26786">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%90%D7%99%D7%99%D7%9C-%D7%92%D7%95%D7%9C%D7%9F/%D7%9E%D7%99-%D7%A9%D7%9E%D7%90%D7%9E%D7%99%D7%9F-%D7%9C%D7%90-%D7%9E%D7%A4%D7%97%D7%93">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%90%D7%99%D7%99%D7%9C_%D7%92%D7%95%D7%9C%D7%9F/%D7%9E%D7%99_%D7%A9%D7%9E%D7%90%D7%9E%D7%99%D7%9F">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 6
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>חלק מהזמן | עידן עמדי<br><small><br>מילים ולחן: עידן עמדי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=12746&wrkid=44849">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A2%D7%99%D7%93%D7%9F-%D7%A2%D7%9E%D7%93%D7%99/%D7%97%D7%9C%D7%A7-%D7%9E%D7%94%D7%96%D7%9E%D7%9F">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%99%D7%93%D7%9F_%D7%A2%D7%9E%D7%93%D7%99/%D7%97%D7%9C%D7%A7_%D7%9E%D7%94%D7%96%D7%9E%D7%9F">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 6
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>עבדו את ה' בשמחה<br><small><br>מילים ולחן: תהילים ק ב</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=806&wrkid=10988">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%92%D7%9C%D7%A2%D7%93-%D7%A4%D7%95%D7%98%D7%95%D7%9C%D7%A1%D7%A7%D7%99-%D7%95%D7%AA%D7%96%D7%9E%D7%95%D7%A8%D7%AA-%D7%A9%D7%9C%D7%94%D7%91%D7%AA/%D7%A2%D7%91%D7%93%D7%95-%D7%90%D7%AA-%D7%94%D7%A9%D7%9D-%D7%91%D7%A9%D7%9E%D7%97%D7%94">נגינה</a>
+             
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+           </tr>
+			<tr>	
+                <td>אנחנו מאמינים בני מאמינים<br><small><br>מילים ולחן: עממי</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=3497&wrkid=13046">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="">אין לינק</a>
+             
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>		   
+<tr>	
+                <td>מצווה גדולה להיות בשמחה<br><small><br>מילים ולחן: עממי</small></td>
+                <td class="links">
+                    <a href="https://www.tab4u.com/lyrics/songs/71340_%D7%A2%D7%9E%D7%9E%D7%99_-_%D7%9E%D7%A6%D7%95%D7%95%D7%94_%D7%92%D7%93%D7%95%D7%9C%D7%94.html">TAB4U</a>
+                </td>
+                <td class="links">
+                    <a href="https://www.tab4u.com/tabs/songs/71340_%D7%A2%D7%9E%D7%9E%D7%99_-_%D7%9E%D7%A6%D7%95%D7%95%D7%94_%D7%92%D7%93%D7%95%D7%9C%D7%94.html?#song">TAB4U</a>
+             
+                </td>
+				<td>
+					קאפו בסריג 5
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>	         
+
+			<tr>	
+                <td>שבחי ירושליים | אביהו מדינה<br><small><br>מילים: תהילים, קמז, יב-יג | לחן: אביהו מדינה</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=37&wrkid=3466">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%90%D7%91%D7%99%D7%94%D7%95-%D7%9E%D7%93%D7%99%D7%A0%D7%94/%D7%A9%D7%91%D7%97%D7%99-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D">נגינה</a>
+             
+                </td>
+				<td>
+					קאפו בסריג 1
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>	         
+			<tr>	
+                <td>מהפכה של שמחה | ליאור נרקיס ועומר אדם<br><small><br>מילין ולחן: אביהו דורון מדלי</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=16513&wrkid=41079">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A2%D7%95%D7%9E%D7%A8-%D7%90%D7%93%D7%9D/%D7%9E%D7%94%D7%A4%D7%9B%D7%94-%D7%A9%D7%9C-%D7%A9%D7%9E%D7%97%D7%94">נגינה</a>
+             
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>	         
+
+		 <tr>
+                <td>מחשבות טובות (דיבורים טובים) | מוטי וייס<br><small><br>מילים: אושר שרון כהן, מוטי וייס וחיים גולד | לחן: חסידות חב"ד</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=25297&wrkid=59580">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%9E%D7%95%D7%98%D7%99_%D7%95%D7%99%D7%99%D7%A1/%D7%9E%D7%97%D7%A9%D7%91%D7%95%D7%AA_%D7%98%D7%95%D7%91%D7%95%D7%AA">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>אל תירא ישראל (יעקב התמים) | אביהו מדינה<br><small><br>מילים ולחן: אביהו מדינה</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=37&wrkid=4207">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://www.tab4u.com/tabs/songs/68710_%D7%90%D7%91%D7%99%D7%94%D7%95_%D7%9E%D7%93%D7%99%D7%A0%D7%94_-_%D7%90%D7%9C_%D7%AA%D7%99%D7%A8%D7%90.html?type=video">TAB4U</a>               
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+            <tr>
+                <td>תתארו לכם  | שלמה ארצי<br><small><br>מילים ולחן: שלמה ארצי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=975&wrkid=18638">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A9%D7%9C%D7%9E%D7%94-%D7%90%D7%A8%D7%A6%D7%99/%D7%AA%D7%AA%D7%90%D7%A8%D7%95-%D7%9C%D7%9B%D7%9D">נגינה</a>,
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%A8%D7%A6%D7%99/%D7%AA%D7%AA%D7%90%D7%A8%D7%95_%D7%9C%D7%9B%D7%9D">נגנו</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			  <tr>
+                <td>עיר נמל  | אייל גולן<br><small><br>מילים ולחן: דביר קהלני ורותם חן<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=92&wrkid=57434">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%90%D7%99%D7%99%D7%9C-%D7%92%D7%95%D7%9C%D7%9F/%D7%A2%D7%99%D7%A8-%D7%A0%D7%9E%D7%9C">נגינה</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 2
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			
+			
+			
+			 <tr>
+                <td>אלוף העולם  | חנן בן ארי<br><small><br>מילים:חנן בן ארי | לחן: חנן בן ארי ונתן גושן<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=48648">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%90%D7%9C%D7%95%D7%A3-%D7%94%D7%A2%D7%95%D7%9C%D7%9D">נגינה</a>
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%92%D7%A8%D7%A1%D7%94_%D7%A7%D7%9C%D7%94/%D7%97%D7%A0%D7%9F_%D7%91%D7%9F_%D7%90%D7%A8%D7%99/%D7%90%D7%9C%D7%95%D7%A3_%D7%94%D7%A2%D7%95%D7%9C%D7%9D">נגנו</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 1
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			 <tr>
+                <td>אם תרצי  | חנן בן ארי<br><small><br>מילים ולחן: חנן בן ארי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=50090">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%90%D7%9D-%D7%AA%D7%A8%D7%A6%D7%99-1">נגינה</a>
+                   
+                </td>
+				<td>
+					קאפו בסריג 2
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			 <tr>
+                <td>שמש  | חנן בן ארי<br><small><br>מילים ולחן: חנן בן ארי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=49466">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%A9%D7%9E%D7%A9">נגינה</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			 <tr>
+                <td>ואפילו בהסתרה  | יעקב שוואקי וקובי פרץ<br><small><br>מילים:רבי נחמן מברסלב מליקוטי מוהר"ן | לחן: דביר קהלני שעיה גרוס<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=7740&wrkid=47843">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%99%D7%95%D7%90%D7%9C_%D7%A7%D7%9C%D7%99%D7%99%D7%9F/%D7%95%D7%90%D7%A4%D7%99%D7%9C%D7%95_%D7%91%D7%94%D7%A1%D7%AA%D7%A8%D7%94">נגנו</a>
+                         
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			 <tr>
+                <td>ואיך שלא  | אריאל זילבר<br><small><br>מילים ולחן: אריאל זילבר<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=162&wrkid=1299">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%90%D7%A8%D7%99%D7%90%D7%9C-%D7%96%D7%99%D7%9C%D7%91%D7%A8/%D7%95%D7%90%D7%99%D7%9A-%D7%A9%D7%9C%D7%90">נגינה</a>
+                    <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%96%D7%99%D7%9C%D7%91%D7%A8/%D7%95%D7%90%D7%99%D7%9A_%D7%A9%D7%9C%D7%90">נגנו</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 0
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			
+			 <tr>
+                <td>מתנות קטנות  | רמי קליינשטיין<br><small><br>מילים: נועם חורב | לחן: רמי קליינשטיין<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=920&wrkid=36715">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A8%D7%9E%D7%99-%D7%A7%D7%9C%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F/%D7%9E%D7%AA%D7%A0%D7%95%D7%AA-%D7%A7%D7%98%D7%A0%D7%95%D7%AA">נגינה</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 2
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			
+			
+			
+				
+				
+				<tr>
+                <td>ירושלים של זהב  | נעומי שמר<br><small><br>מילים ולחן: נעומי שמר<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=820&wrkid=1619">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%A0%D7%A2%D7%9E%D7%99-%D7%A9%D7%9E%D7%A8/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D-%D7%A9%D7%9C-%D7%96%D7%94%D7%91">נגינה</a>
+                   
+       
+                </td>
+				<td>
+					קאפו בסריג 4
+				</td>
+                <td class="links">
+                    <a href="https://drive.google.com/drive/folders/ACCOUNTNAME">קישור לתווים-  קיים - כינור</a>
+          
+                </td>
+            </tr>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+              
+			  <!-- More rows -->
+			  
+			  
+			  
+
+
+
+				<tr>
+                    <td>אהבה | אושר כהן<br><small>מילים ולחן: אושר כהן</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=16196&wrkid=58006" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%95%D7%A9%D7%A8-%D7%9B%D7%94%D7%9F/%D7%90%D7%94%D7%91%D7%94-1" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 3</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>מנגן ושר | אושר כהן<br><small>מילים ולחן: אושר כהן</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=16196&wrkid=59720" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%95%D7%A9%D7%A8-%D7%9B%D7%94%D7%9F/%D7%9E%D7%A0%D7%92%D7%9F-%D7%95%D7%A9%D7%A8" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 1</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				  <tr>
+                    <td>באתי אלייך (פזמון) | אייל גולן<br><small>מילים: ולחן: פן חזות ודולב רם</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=92&wrkid=42979" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%99%D7%99%D7%9C-%D7%92%D7%95%D7%9C%D7%9F/%D7%91%D7%90%D7%AA%D7%99-%D7%90%D7%9C%D7%99%D7%99%D7%9A" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>מלכת היופי שלי | אייל גולן<br><small>מילים: יוסי גיספן | לחן: עדי לאון</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=chords&lang=1&prfid=92&wrkid=13810" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%99%D7%99%D7%9C-%D7%92%D7%95%D7%9C%D7%9F/%D7%99%D7%A4%D7%94-%D7%A9%D7%9C%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 2</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+
+  <tr>
+                    <td>מנגינה | אייל גולן<br><small>מילים: מורן כרמל | לחן: רביב בן מנחם</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=92&wrkid=32347" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.tab4u.com/tabs/songs/8378_%D7%90%D7%99%D7%99%D7%9C_%D7%92%D7%95%D7%9C%D7%9F_-_%D7%9E%D7%A0%D7%92%D7%99%D7%A0%D7%94.html?#song" target="_blank" rel="noopener noreferrer">TAB4U</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>אור | אליעד נחום<br><small>מילים ולחן: אליעד נחום וסתיו שמש</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=18402&wrkid=41737" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%9C%D7%99%D7%A2%D7%93/%D7%90%D7%95%D7%A8" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 1</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				  <tr>
+                    <td>מסע | אליעד נחום<br><small>מילים ולחן: אליעד נחום וצליל קליפי</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=18402&wrkid=49116" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%9C%D7%99%D7%A2%D7%93/%D7%9E%D7%A1%D7%A2" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 3</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>מתוק כשמרלי | אליעד נחום<br><small>מילים ולחן: אליעד נחום</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=16155&wrkid=39358" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%9C%D7%99%D7%A2%D7%93/%D7%9E%D7%AA%D7%95%D7%A7-%D7%A9%D7%9E%D7%A8%D7%9C%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%95%D7%9E%D7%A8_%D7%90%D7%93%D7%9D/%D7%9E%D7%95%D7%93%D7%94_%D7%90%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגנו</a>
+                    </td>
+                    <td>קאפו בסריג 1</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+
+  <tr>
+                    <td>נוסע (פזמון)| אליעד נחום<br><small>מילים ולחן: אליעד נחום</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=16155&wrkid=43987" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%92%D7%A8%D7%A1%D7%94_%D7%A7%D7%9C%D7%94/%D7%90%D7%9C%D7%99%D7%A2%D7%93_%D7%A0%D7%97%D7%95%D7%9D/%D7%A0%D7%95%D7%A1%D7%A2" target="_blank" rel="noopener noreferrer">נגנו</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>מי לא יבוא | אברהם טל ובניה ברבי<br><small>מילים ולחן: אברהם טל, בניה ברבי ואבי אוחיון</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17746&wrkid=54429" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%91%D7%A0%D7%99%D7%94-%D7%91%D7%A8%D7%91%D7%99/%D7%9E%D7%99-%D7%9C%D7%90-%D7%99%D7%91%D7%95%D7%90" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				  <tr>
+                    <td>מישהו איתי כאן | בניה ברבי<br><small>מילים ולחן: בניה ברבי ואבי אוחיון</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17746&wrkid=55701" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%91%D7%A0%D7%99%D7%94-%D7%91%D7%A8%D7%91%D7%99/%D7%9E%D7%99%D7%A9%D7%94%D7%95-%D7%90%D7%99%D7%AA%D7%99-%D7%9B%D7%90%D7%9F" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 5</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				 <tr>
+                    <td>קרן שמש | בניה ברבי<br><small>מילים ולחן:: אליעד נחום, דודי בר דוד ובניה ברבי</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17746&wrkid=49186" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%91%D7%A0%D7%99%D7%94-%D7%91%D7%A8%D7%91%D7%99/%D7%A7%D7%A8%D7%9F-%D7%A9%D7%9E%D7%A9" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%95%D7%9E%D7%A8_%D7%90%D7%93%D7%9D/%D7%9E%D7%95%D7%93%D7%94_%D7%90%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגנו</a>
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				  <tr>
+                    <td>אל תשאלי | גיל ויין<br><small>מילים ולחן: גיל ויין</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=20253&wrkid=45978" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%92%D7%99%D7%9C-%D7%95%D7%99%D7%99%D7%9F/%D7%90%D7%9C-%D7%AA%D7%A9%D7%90%D7%9C%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%95%D7%9E%D7%A8_%D7%90%D7%93%D7%9D/%D7%9E%D7%95%D7%93%D7%94_%D7%90%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגנו</a>
+                    </td>
+                    <td>קאפו בסריג 4</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				  <tr>
+                    <td>צבעים | גיל ויין<br><small>מילים ולחן: גיל ויין</small></td>
+                    <td class="links">
+                        <a href="https://tavisraeli.co.il/song/%D7%A6%D7%91%D7%A2%D7%99%D7%9D-%D7%92%D7%99%D7%9C-%D7%95%D7%99%D7%99%D7%9F-%D7%A8%D7%95%D7%9F-%D7%91%D7%95%D7%9B%D7%A0%D7%99%D7%A7-%D7%AA%D7%95%D7%95%D7%99%D7%9D-%D7%95%D7%90%D7%A7%D7%95%D7%A8/#song_lyrics" target="_blank" rel="noopener noreferrer">תו ישראלי</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%92%D7%99%D7%9C-%D7%95%D7%99%D7%99%D7%9F/%D7%A6%D7%91%D7%A2%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+
+				<tr>
+				<td>הפרח בגני | זוהר ארגוב<br><small>מילים: אביהו מדינה | לחן: אביהו מדינה ומשה בן משה</small></td>
+				<td class="links">
+					<a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=373&wrkid=49689" target="_blank" rel="noopener noreferrer">שירונט</a>
+				</td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%96%D7%95%D7%94%D7%A8-%D7%90%D7%A8%D7%92%D7%95%D7%91/%D7%94%D7%A4%D7%A8%D7%97-%D7%91%D7%92%D7%A0%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 3</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				  <tr>
+                    <td>שבט אחים ואחיות<br><small>מילים: דורון מדלי | לחן: עידן רייכל</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=21830&wrkid=49288" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%90%D7%95%D7%9E%D7%A0%D7%99-%D7%99%D7%A9%D7%A8%D7%90%D7%9C/%D7%A9%D7%91%D7%98-%D7%90%D7%97%D7%99%D7%9D-%D7%95%D7%90%D7%97%D7%99%D7%95%D7%AA" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				 <tr>
+                    <td>אמא אם הייתי | חנן בן ארי<br><small>מילים: חנן בן ארי | לחן: אלנתן שלום</small></td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=40994" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%90%D7%9E%D7%90-%D7%90%D7%9D-%D7%94%D7%99%D7%99%D7%AA%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 5</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				 <tr>
+                <td>אמן על הילדים  | חנן בן ארי<br><small><br>מילים ולחן: חנן בן ארי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=51154">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%90%D7%9E%D7%9F-%D7%A2%D7%9C-%D7%94%D7%99%D7%9C%D7%93%D7%99%D7%9D">נגינה</a>
+                   
+                </td>
+				<td>
+					קאפו בסריג 1
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			
+			
+			
+			
+			 <tr>
+                <td>עטלף עיוור  | חנן בן ארי<br><small><br>מילים ולחן: חנן בן ארי<br></small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17593&wrkid=57816">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%A2%D7%98%D7%9C%D7%A3-%D7%A2%D7%99%D7%95%D7%95%D7%A8">נגינה</a>
+                   
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+			
+		
+				
+				  <tr>
+                    <td>רגע | חנן בן ארי<br><small>מילים: חנן בן ארי ורועי חסן | לחן: חנן בן ארי</small></td>
+                    <td class="links">
+                        <a href="https://tavisraeli.co.il/song/%D7%AA%D7%95%D7%95%D7%99%D7%9D-%D7%95%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D-%D7%9C%D7%A9%D7%99%D7%A8-%D7%A8%D7%92%D7%A2-%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/#song_lyrics" target="_blank" rel="noopener noreferrer">תו ישראלי</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%97%D7%A0%D7%9F-%D7%91%D7%9F-%D7%90%D7%A8%D7%99/%D7%A8%D7%92%D7%A2" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 5</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				
+				    <tr>
+                <td>הלב שלי | ישי ריבו<br><small><br>מילים ולחן: ישי ריבו</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=14733&wrkid=48559">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%99%D7%A9%D7%99-%D7%A8%D7%99%D7%91%D7%95/%D7%94%D7%9C%D7%91-%D7%A9%D7%9C%D7%99-1">נגינה</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 3
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+				
+				
+				
+				<tr>
+                <td>לשוב הביתה | ישי ריבו<br><small><br>מילים ולחן: ישי ריבו ומאור שושן</small></td>
+                <td class="links">
+                    <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=14733&wrkid=47086">שירונט</a>
+                </td>
+                <td class="links">
+                    <a href="https://negina.co.il/chords/%D7%99%D7%A9%D7%99-%D7%A8%D7%99%D7%91%D7%95/%D7%9C%D7%A9%D7%95%D7%91-%D7%94%D7%91%D7%99%D7%AA%D7%94">נגינה</a>
+                    
+                </td>
+				<td>
+					קאפו בסריג 2
+				</td>
+                <td class="links">
+                    <a href="">קישור לתווים - ממתין לתווים</a>
+          
+                </td>
+            </tr>
+				
+				
+				
+				
+				
+				  <tr>
+                      <td>
+						ילד של אבא | מוקי
+						<br>
+						<small>שירים לילדים</small><br>
+						<br><small>מילים: דני יניב | לחן: יאיא כהן אהרונוב</small></td>
+
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=620&wrkid=36558" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%9E%D7%95%D7%A7%D7%99/%D7%99%D7%9C%D7%93-%D7%A9%D7%9C-%D7%90%D7%91%D7%90" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 1</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				  <tr>
+                    <td>
+					אחרי כל השנים | עומר אדם
+					<br>
+					<small>שירים לצוות הרפואי</small><br> 
+					<small>מילים ולחן: אבי אוחיון</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=10755&wrkid=45094" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%A2%D7%95%D7%9E%D7%A8-%D7%90%D7%93%D7%9D/%D7%90%D7%97%D7%A8%D7%99-%D7%9B%D7%9C-%D7%94%D7%A9%D7%A0%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 1</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				  <tr>
+                    <td>
+					רחוק מכולם | עומר אדם
+					<br>
+					<small>שירים לצוות הרפואי</small><br> 
+					<small>מילים ולחן: תמר יהלומי ויונתן קלימי</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=10755&wrkid=47852" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%A2%D7%95%D7%9E%D7%A8-%D7%90%D7%93%D7%9D/%D7%A8%D7%97%D7%95%D7%A7-%D7%9E%D7%9B%D7%95%D7%9C%D7%9D" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				
+				
+				
+				 <tr>
+                    <td>
+					לא תנצחו אותי | יהורם גאון
+					<br>
+					<small>שירים לקהל מבוגר</small><br> 
+					<small>מילים ולחן: נעומי שמר</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=465&wrkid=59335" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%99%D7%94%D7%95%D7%A8%D7%9D-%D7%92%D7%90%D7%95%D7%9F/%D7%9C%D7%90-%D7%AA%D7%A0%D7%A6%D7%97%D7%95-%D7%90%D7%95%D7%AA%D7%99" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 3</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				 <tr>
+                    <td>
+					אני מאמין | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים ולחן: י"ג עיקרים - [עיקר יב]</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=806&wrkid=6011" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.tab4u.com/tabs/songs/69794_%D7%97%D7%A0%D7%9F_%D7%91%D7%9F_%D7%90%D7%A8%D7%99_-_%D7%90%D7%A0%D7%99_%D7%9E%D7%90%D7%9E%D7%99%D7%9F.html?#song" target="_blank" rel="noopener noreferrer">TAB4U</a>,
+						<a href="https://shirrim.com/song-chrods/%d7%90%d7%a0%d7%99-%d7%9e%d7%90%d7%9e%d7%99%d7%9f-5/" target="_blank" rel="noopener noreferrer">SHIRRIM</a>
+
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+					
+				
+				 <tr>
+                    <td>
+					אעופה אשכונה | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים ולחן: רבי יצחק אבוחצירה זצ"ל</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=17365&wrkid=39623" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://shirrim.com/song-chrods/%D7%90%D7%A2%D7%95%D7%A4%D7%94-%D7%90%D7%A9%D7%9B%D7%95%D7%A0%D7%94/" target="_blank" rel="noopener noreferrer">SHIRRIM</a>
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+					
+				
+				 <tr>
+                    <td>
+					הבאנו שלום עליכם | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים ולחן: עממי</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=806&wrkid=9045" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.nagnu.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/%D7%A2%D7%9E%D7%9E%D7%99/%D7%94%D7%91%D7%90%D7%A0%D7%95_%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D" target="_blank" rel="noopener noreferrer">נגנו</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+					<a href="https://musescore.com/user/129316/scores/7677761" target="_blank" rel="noopener noreferrer">קישור לתווים - קיים</a>
+                    </td>
+                </tr>
+				
+					
+				
+				 <tr>
+                    <td>
+					הושיעה את עמך | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים: תהילים כח ט' | לחן: הרב אברהם טברסקי</small>
+					</td>
+                    <td class="links">
+                        <a href="https://he.wikisource.org/wiki/%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%94:%D7%AA%D7%94%D7%9C%D7%99%D7%9D_%D7%9B%D7%97_%D7%98" target="_blank" rel="noopener noreferrer">ויקיטקסט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.akordim.com/chord-pages/%D7%94%D7%95%D7%A9%D7%99%D7%A2%D7%94-%D7%90%D7%AA-%D7%A2%D7%9E%D7%9A" target="_blank" rel="noopener noreferrer">AKORDIM</a>
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				 <tr>
+                    <td>
+					ישיש עלייך אלוקיך | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים ולחן: ישעיהו ס"ב, ה'</small>
+					</td>
+                    <td class="links">
+					<a href="https://www.tab4u.com/lyrics/songs/69089_%D7%A2%D7%9E%D7%9E%D7%99_-_%D7%99%D7%A9%D7%99%D7%A9_%D7%A2%D7%9C%D7%99%D7%99%D7%9A.html" target="_blank" rel="noopener noreferrer">TAB4U</a>
+                    </td>
+                    <td class="links">
+					<a href="https://www.akordim.com/chord-pages/%D7%99%D7%A9%D7%99%D7%A9-%D7%A2%D7%9C%D7%99%D7%99%D7%9A-%D7%90%D7%9C%D7%95%D7%A7%D7%99%D7%9A" target="_blank" rel="noopener noreferrer">AKORDIM</a>
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+			
+				 <tr>
+                    <td>
+					שאו שערים ראשיכם | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים ולחן: תהילים כ"ד ט'</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=1869&wrkid=6049" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                    <a href="https://www.akordim.com/chord-pages/%D7%A9%D7%90%D7%95-%D7%A9%D7%A2%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%99%D7%9B%D7%9D" target="_blank" rel="noopener noreferrer">AKORDIM</a>
+					</td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+			
+				
+				 <tr>
+                    <td>
+					כל העולם כולו | עממי
+					<br>
+					<small>שירי אמונה</small><br> 
+					<small>מילים: רבי נחמן מברסלב | לחן: ברוך חייט</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=870&wrkid=1708" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+					<a href="https://www.akordim.com/chord-pages/%D7%9B%D7%9C-%D7%94%D7%A2%D7%95%D7%9C%D7%9D-%D7%9B%D7%95%D7%9C%D7%95" target="_blank" rel="noopener noreferrer">AKORDIM</a>
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+					<a href="https://musescore.com/user/79422397/scores/14626702" target="_blank" rel="noopener noreferrer">קישור לתווים - קיים</a>
+                    </td>
+                </tr>
+				
+				
+				
+					
+				 <tr>
+                    <td>
+					מעוז צור | עממי
+					<br>
+					<small>שירי חנוכה</small><br> 
+					<small>מילים ולחן: עממי</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=806&wrkid=3644" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://www.akordim.com/chord-pages/%D7%9E%D7%A2%D7%95%D7%96-%D7%A6%D7%95%D7%A8" target="_blank" rel="noopener noreferrer">AKORDIM</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="https://musescore.com/user/26911538/scores/5296529" target="_blank" rel="noopener noreferrer">קישור לתווים - קיים</a>
+                    </td>
+                </tr>
+				
+				
+				
+					
+				 <tr>
+                    <td>
+					ששון ויקר | עממי
+					<br>
+					<small>שירי פורים</small><br> 
+					<small>מילים ולחן: מגילת אסתר (ח', ט"ז)</small>
+					</td>
+                    <td class="links">
+                        <a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=806&wrkid=3884" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+                        <a href="https://negina.co.il/chords/%D7%A9%D7%99%D7%A8%D7%99-%D7%A4%D7%95%D7%A8%D7%99%D7%9D/%D7%A9%D7%A9%D7%95%D7%9F-%D7%95%D7%99%D7%A7%D7%A8" target="_blank" rel="noopener noreferrer">נגינה</a>,
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+                        <a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+					
+				
+				 <tr>
+                    <td>
+					שלום עליכם | עממי
+					<br>
+					<small>שירי שבת</small><br> 
+					<small>מילים ולחן: עממי</small>
+					</td>
+                    <td class="links">
+					<a href="https://he.wikisource.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D_%D7%9E%D7%9C%D7%90%D7%9B%D7%99_%D7%94%D7%A9%D7%A8%D7%AA" target="_blank" rel="noopener noreferrer">ויקיטקסט</a>
+                    </td>
+                    <td class="links">
+					<a href="https://www.akordim.com/chord-pages/%D7%A9%D7%9C%D7%95%D7%9D-%D7%A2%D7%9C%D7%99%D7%9B%D7%9D" target="_blank" rel="noopener noreferrer">AKORDIM</a>
+
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+					<a href="https://musescore.com/user/12904826/scores/5072947" target="_blank" rel="noopener noreferrer">קישור לתווים - קיים - כינור</a>
+                    </td>
+                </tr>
+				
+				
+				
+				 <tr>
+                    <td>
+					לכה דודי | עממי
+					<br>
+					<small>שירי שבת</small><br> 
+					<small>מילים ולחן: רבי שלמה הלוי</small>
+					</td>
+                    <td class="links">
+					<a href="https://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=515&wrkid=13702" target="_blank" rel="noopener noreferrer">שירונט</a>
+                    </td>
+                    <td class="links">
+					<a href="https://negina.co.il/chords/%D7%A9%D7%99%D7%A8%D7%99-%D7%A9%D7%91%D7%AA/%D7%9C%D7%9B%D7%94-%D7%93%D7%95%D7%93%D7%99-1" target="_blank" rel="noopener noreferrer">נגינה</a>
+
+                    </td>
+                    <td>קאפו בסריג 0</td>
+                    <td class="links">
+					<a href="" target="_blank" rel="noopener noreferrer">קישור לתווים - ממתין לתווים</a>
+                    </td>
+                </tr>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				  <!-- More rows -->
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const table = document.querySelector("table");
+            const headers = table.querySelectorAll("th");
+            const searchInput = document.getElementById("searchInput");
+            const tbody = table.querySelector("tbody");
+            let rows = Array.from(tbody.querySelectorAll("tr"));
+            let filteredRows = [...rows]; // Initialize filteredRows with all rows initially
+
+            function filterTable() {
+                const searchTerm = searchInput.value.toLowerCase();
+                filteredRows = rows.filter(row => {
+                    const cells = Array.from(row.getElementsByTagName("td"));
+                    return cells.some(cell => cell.innerText.toLowerCase().includes(searchTerm));
+                });
+                updateTableBody(filteredRows);
+            }
+
+            function updateTableBody(rowsToDisplay) {
+                tbody.innerHTML = "";
+                rowsToDisplay.forEach(row => tbody.append(row));
+            }
+
+            searchInput.addEventListener("input", filterTable);
+
+            headers.forEach((header, index) => {
+                header.addEventListener("click", () => {
+                    const isAscending = header.getAttribute("aria-sort") === "ascending";
+
+                    filteredRows.sort((a, b) => {
+                        const aText = a.children[index].innerText.trim();
+                        const bText = b.children[index].innerText.trim();
+
+                        if (aText === bText) return 0;
+
+                        return (aText > bText ? 1 : -1) * (isAscending ? -1 : 1);
+                    });
+
+                    updateTableBody(filteredRows);
+
+                    headers.forEach(th => th.setAttribute("aria-sort", "none"));
+                    header.setAttribute("aria-sort", isAscending ? "descending" : "ascending");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
